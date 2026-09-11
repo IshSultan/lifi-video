@@ -1,0 +1,5 @@
+# list file details in long-listing format
+ls -l /dev/serial0
+
+# raspberry pi configuration settings
+sudo raspi-config
