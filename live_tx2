@@ -1,0 +1,19 @@
+import serial
+import zlib
+BAUDRATE = 3 000 000
+
+ser = serial.Serial(
+    'dev/serial0',
+    baudrate = BAUDRATE,
+    parity = serial.PARITY_NONE,
+    stopbit = 1,
+    timeout = 1
+)
+
+def crc32(data):
+    return zlib.crc32(data)
+
+while True:
+    ser.write(data)
+
+    
